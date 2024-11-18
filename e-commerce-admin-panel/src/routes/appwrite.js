@@ -1,4 +1,8 @@
 import { Account, Client, Databases } from "appwrite";
+import { createRequire } from 'module';
+
+const require = createRequire(import.meta.url);
+
  const client = new Client();
  client
   .setEndpoint(process.env.APPWRITE_ENDPOINT_ID)
